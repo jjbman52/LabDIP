@@ -11,6 +11,6 @@ package dip.lab3.student.solution1;
  */
 public interface Output {
 
-    public abstract void writeOutput(String line);
+    public abstract void getOutput(String line);
     
 }

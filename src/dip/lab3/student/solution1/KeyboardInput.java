@@ -14,9 +14,9 @@ import java.util.Scanner;
 public class KeyboardInput implements Input {
     
     @Override
-    public final String readInput() {
-        ConsoleOutput output = new ConsoleOutput();
-        output.writeOutput("Please enter what you would like your message to say: ");
+    public final String getInput() {
+        Output output = new ConsoleOutput();
+        output.getOutput("Please enter what you would like your message to say: ");
 
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();

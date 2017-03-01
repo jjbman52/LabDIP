@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 public class GuiInput implements Input {
 
     @Override
-    public final String readInput() {
+    public final String getInput() {
         String input = JOptionPane.showInputDialog(null, "Enter Message");
         
         if(input == null || input.isEmpty() || input.length() < 2){

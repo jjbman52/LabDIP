@@ -19,7 +19,31 @@ public class MessageSystem {
     }
     
     public void getMessage() {
-        String line = input.readInput();
-        output.writeOutput(line);
+        String line = input.getInput();
+        output.getOutput(line);
+    }
+
+    public final Input getInput() {
+        return input;
+    }
+
+    public final void setInput(Input input) {
+        if(input == null){
+            throw new IllegalArgumentException("Input is not valid.");
+        }else {
+            this.input = input;
+        }
+    }
+
+    public final Output getOutput() {
+        return output;
+    }
+
+    public final void setOutput(Output output) {
+        if(output == null){
+            throw new IllegalArgumentException("Output is not valid.");
+        }else {
+            this.output = output;
+        }
     }
 }

@@ -12,7 +12,7 @@ package dip.lab3.student.solution1;
 public class ConsoleOutput implements Output {
     
     @Override
-    public final void writeOutput(String line) {
+    public final void getOutput(String line) {
         if(line == null || line.isEmpty() || line.length() < 2){
             throw new IllegalArgumentException("Input is not valid.");
         }else{
