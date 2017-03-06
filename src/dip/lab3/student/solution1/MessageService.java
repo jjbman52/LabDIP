@@ -9,18 +9,18 @@ package dip.lab3.student.solution1;
  *
  * @author jordanrehbein
  */
-public class MessageSystem {
+public class MessageService {
     private Input input;
     private Output output;
 
-    public MessageSystem(Input input, Output output) {
+    public MessageService(Input input, Output output) {
         this.input = input;
         this.output = output;
     }
     
     public void getMessage() {
         String line = input.getInput();
-        output.getOutput(line);
+        output.produceOutput(line);
     }
 
     public final Input getInput() {

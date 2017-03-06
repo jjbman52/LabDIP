@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 public class GuiOutput implements Output{
 
     @Override
-    public final void getOutput(String line) {
+    public final void produceOutput(String line) {
         if(line == null || line.isEmpty() || line.length() < 2){
             throw new IllegalArgumentException("Input is not valid.");
         }else{

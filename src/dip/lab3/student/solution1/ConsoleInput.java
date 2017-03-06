@@ -11,12 +11,13 @@ import java.util.Scanner;
  *
  * @author jordanrehbein
  */
-public class KeyboardInput implements Input {
+public class ConsoleInput implements Input {
     
     @Override
     public final String getInput() {
+        // Prompt for Console input is Console - output maybe any Class that implements Output
         Output output = new ConsoleOutput();
-        output.getOutput("Please enter what you would like your message to say: ");
+        output.produceOutput("Please enter what you would like your message to say: ");
 
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();

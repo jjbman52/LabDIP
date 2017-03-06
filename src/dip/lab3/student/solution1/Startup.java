@@ -14,7 +14,7 @@ public class Startup {
         Input input = new GuiInput();
         Output output = new ConsoleOutput();
         
-        MessageSystem messageSystem = new MessageSystem(input, output);
+        MessageService messageSystem = new MessageService(input, output);
         
         messageSystem.getMessage();
     }
